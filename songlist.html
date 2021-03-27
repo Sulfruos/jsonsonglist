@@ -1,0 +1,135 @@
+<html>
+<head>
+  <title>JSON Songlist</title>
+</head>
+<body>
+<form>
+  <label for="genres">Choose a genre:</label>
+  <select id="genres" name="genres">
+    <option value="Rap">Rap</option>
+    <option value="Hip-Hop">Hip-Hop</option>
+    <option value="EDM">EDM</option>
+    <option value="Pop">Pop</option>
+  </select>
+</form>
+<button onclick="filter()">Filter</button>
+<div id="myData"></div>
+<div id="filterData"></div>
+<script language="javascript">
+let mySonglist =
+[
+  {
+    "name": "Apple Pie",
+    "artist": "Travis Scott",
+    "year": "2015",
+    "genres": ["Rap", "Hip-Hop"]
+  },
+  {
+    "name": "Long Time - Intro",
+    "artist": "Playboi Carti",
+    "year": "2018",
+    "genres": ["Rap"]
+  },
+  {
+    "name": "Skateboard P",
+    "artist": "MadeinTYO",
+    "year": "2016",
+    "genres": ["Rap"]
+  },
+  {
+    "name": "Wassup",
+    "artist": "A$AP Rocky",
+    "year": "2011",
+    "genres": ["Rap"]
+  },
+  {
+    "name": "Marie Curie",
+    "artist": "Pi'erre Bourne",
+    "year": "2018",
+    "genres": ["Rap"]
+  },
+  {
+    "name": "Harder, Better, Faster, Stronger",
+    "artist": "Daft Punk",
+    "year": "2001",
+    "genres": ["EDM"]
+  },
+  {
+    "name": "Str8 Outta Mumbai",
+    "artist": "Jai Paul",
+    "year": "2013",
+    "genres": ["Pop", "EDM"]
+  },
+  {
+    "name": "Oh My Dis Side",
+    "artist": "Travis Scott",
+    "year": "2015",
+    "genres": ["Rap"]
+  },
+  {
+    "name": "Pick Up the Phone",
+    "artist": "Justin Huang",
+    "year": "2019",
+    "genres": ["Hip-Hop", "Pop"]
+  },
+  {
+    "name": "20 Min",
+    "artist": "Lil Uzi Vert",
+    "year": "2017",
+    "genres": ["Rap"]
+  },
+];
+
+//PART 2: Serialize JSON into string
+//var myJSON = JSON.stringify(mySonglist);
+//document.getElementById("info").innerHTML = myJSON;
+
+//PART 3: Display data in readable format
+/*
+var mainContainer = document.getElementById("myData");
+for (i = 0; i < mySonglist.length; i++)
+{
+  var div = document.createElement("div");
+  div.innerHTML = "<p>Name: " + mySonglist[i].name + "</p>";
+  var div2 = document.createElement("div2");
+  div2.innerHTML = "<p>Artist: " + mySonglist[i].artist + "</p>";
+  var div3 = document.createElement("div3");
+  div3.innerHTML = "<p>Genre: " + mySonglist[i].genres + "</p>";
+  var div4 = document.createElement("div4");
+  div4.innerHTML = "<p>Year Released: " + mySonglist[i].year + "</p><br>";
+  mainContainer.appendChild(div);
+  mainContainer.appendChild(div2);
+  mainContainer.appendChild(div3);
+  mainContainer.appendChild(div4);
+}
+*/
+
+function filter()
+{
+  var otherContainer = document.getElementById("filterData");
+  otherContainer.innerHTML = "";
+  var output = document.getElementById('genres').value;
+  console.log(output);
+  for (i = 0; i < mySonglist.length; i++)
+  {
+    if ((mySonglist[i].genres).includes(output))
+    {
+      var div = document.createElement("div");
+      div.innerHTML = "<p>Name: " + mySonglist[i].name + "</p>";
+      var div2 = document.createElement("div2");
+      div2.innerHTML = "<p>Artist: " + mySonglist[i].artist + "</p>";
+      var div3 = document.createElement("div3");
+      div3.innerHTML = "<p>Genre: " + mySonglist[i].genres + "</p>";
+      var div4 = document.createElement("div4");
+      div4.innerHTML = "<p>Year Released: " + mySonglist[i].year + "</p><br>";
+      otherContainer.appendChild(div);
+      otherContainer.appendChild(div2);
+      otherContainer.appendChild(div3);
+      otherContainer.appendChild(div4);
+    }
+  }
+}
+
+</script>
+</body>
+</html>

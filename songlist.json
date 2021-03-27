@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Apple Pie",
+    "artist": "Travis Scott",
+    "year": "2015",
+    "genres": ["Rap"]
+  },
+  {
+    "name": "Long Time - Intro",
+    "artist": "Playboi Carti",
+    "year": "2018",
+    "genres": ["Rap"]
+  },
+  {
+    "name": "Skateboard P",
+    "artist": "MadeinTYO",
+    "year": "2016",
+    "genres": ["Rap"]
+  },
+  {
+    "name": "Wassup",
+    "artist": "A$AP Rocky",
+    "year": "2011",
+    "genres": ["Rap"]
+  },
+  {
+    "name": "Marie Curie",
+    "artist": "Pi'erre Bourne",
+    "year": "2018",
+    "genres": ["Rap"]
+  },
+  {
+    "name": "Harder, Better, Faster, Stronger",
+    "artist": "Daft Punk",
+    "year": "2001",
+    "genres": ["EDM"]
+  },
+  {
+    "name": "Str8 Outta Mumbai",
+    "artist": "Jai Paul",
+    "year": "2013",
+    "genres": ["Pop", "EDM"]
+  },
+  {
+    "name": "Oh My Dis Side",
+    "artist": "Travis Scott",
+    "year": "2015",
+    "genres": ["Rap"]
+  },
+  {
+    "name": "Pick Up the Phone",
+    "artist": "Justin Huang",
+    "year": "2019",
+    "genres": ["Hip-Hop", "K-Pop"]
+  },
+  {
+    "name": "20 Min",
+    "artist": "Lil Uzi Vert",
+    "year": "2017",
+    "genres": ["Rap"]
+  },
+]
